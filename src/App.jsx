@@ -9,12 +9,14 @@ function App() {
   const [offset, setOffset] = useState(0);
   const [selectedPokemon, setSelectedPokemon] = useState(null);
 
+  // fetch 20 Pokémons based on current offset
   const fetchPokemons = async () => {
     const res = await fetch(`https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=20`);
     const data = await res.json();
     setPokemons(data.results);
   };
 
+  // fetch details of a single Pokémon by its URL
   const fetchSinglePokemon = async (url) => {
     const res = await fetch(url);
     const data = await res.json();

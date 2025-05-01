@@ -26,6 +26,7 @@ const Cards = ({ pokemons, onPokemonClick }) => {
               backgroundColor: "#555",
             },
           }}>
+          {/* Capitalize and display Pokémon name */}
           <Typography>{p.name.charAt(0).toUpperCase() + p.name.slice(1)}</Typography>
         </Paper>
       ))}

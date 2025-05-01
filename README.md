@@ -41,7 +41,3 @@
 - When a Pokémon’s name is clicked, fetch that specific Pokémon’s data from the API. Check the docs to find the correct URL for this.
 - Once the data is fetched, render some of the Pokémon's details in the DOM.
 - **Hint:** There's a lot of data in the response! You'll need to explore the response object carefully to decide what to display. Some elements may be deeply nested.
-
-# Example of what the Browser should look like at the end.
-
-![Final Image](./assets/LabExample.png)
